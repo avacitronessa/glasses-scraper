@@ -1,0 +1,34 @@
+# GlassesScraper — Suchkriterien
+criteria:
+  a:
+    min: 48
+    max: 52
+    ideal_min: 48
+    ideal_max: 50
+  b:
+    min: 36
+    max: 40
+    ideal_min: 36
+    ideal_max: 38
+  dbl:
+    min: 18
+    max: 22
+    ideal_min: 19
+    ideal_max: 21
+  frame_pd:
+    min: 67
+    max: 71
+    ideal_min: 68
+    ideal_max: 70
+
+scraping:
+  base_url: "https://www.smartbuyglasses.com"
+  max_pages: 100
+  max_retries: 3
+  request_delay_min: 1.5
+  request_delay_max: 4.0
+  timeout: 30
+
+output:
+  format: "csv"
+  directory: "results"
